@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    // JSON:
+
+    var text = '{"students":[' +
+    '{"firstName":"Fernanda","id":"927930756","grade":"[93,85,90]"},' +
+    '{"firstName":"Jorge","id":"923583504","grade":"[70,65,90]"},' +
+    '{"firstName":"Pastor","id":"920116137","grade":"[83,72,81]"} ]}';
+
+    obj = JSON.parse(text);
+    obj.students[2].grade[0]=87;
+
+
+
+    //Clases:
+
+class Musica {
+    constructor (cancion, genero, artista){
+    this.cancion = cancion;
+    this.genero = genero;
+    this.artista = artista;
+
+    generodelacancion = fucntion (){
+    return  "El genero de la cancion es " + this.genero;
+    }
+    nombredelacancion = function (){
+    return "El nombre de la cancion es "+ this.cancion;
+    }
+    }
+
+
+    //Objetos:
+
+    var estudiante ={
+    nombre: "Pastor Torres",
+    carrera; "Mecatronica",
+    estudiante: function(){
+    return this.nombre + ", Estudia " + this.carrera;
+    }
+    }
+
+    var jugador ={
+    equipo: "Chivas",
+    posicion: "Delantero"
+    nombre: "Alejandro"
+    carrera: function(){
+    return this.nombre + "juega con " + this,equipo + "de " this.posicion;
+    }
+    }
+
+</body>
+</html>

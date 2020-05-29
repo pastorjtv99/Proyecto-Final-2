@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Arrays </title>
+
+</head>
+<p id="demo"></p>
+<body>
+    <script>
+
+
+        var cel1 = {marca : "Iphone", color : "blanco", size : "18 inch", memory : " 64 Gb" };
+
+        celular1 = function (){
+        return "El celular " + this.marca + " es color " + this.color + " y tiene una medida " + this.size +
+        " con una memoria de " + this.memory;
+        }
+        var cel2 = {marca : "Samsung", color : "negro", size : "21 inch", memory : " 250 Gb" };
+
+        celular2 = function (){
+        return "El celular " + this.marca + " es color " + this.color + " y tiene una medida " + this.size +
+        " con una memoria de " + this.memory;
+        }
+
+        var cel3 = {marca : "Xiaomi", color : "azul", size : "19.5 inch", memory : " 268 Gb" };
+
+        celular3 = function (){
+        return "El celular " + this.marca + " es color " + this.color + " y tiene una medida " + this.size +
+        " con una memoria de " + this.memory;
+        }
+
+        var cel4 = {marca : "Huaweu",color : "gris", size : "15 inch", memory : " 100 Gb" };
+
+        celular4 = function (){
+        return "El celular " + this.marca + " es color " + this.color + " y tiene una medida " + this.size +
+        " con una memoria de " + this.memory;
+        }
+
+        var cel5 = {marca : "Motorola", color : "rojo", size : "17 inch", memory : " 500 Gb" };
+
+        celular5 = function (){
+        return "El celular " + this.marca + " es color " + this.color + " y tiene una medida " + this.size +
+        " con una memoria de " + this.memory;
+        }
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+
+        document.getElementById("demo").innerHTML = Celular.length;
+
+        var first = Celular[0];
+
+        var last = Celular[Celular.length - 1];
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        document.getElementById("demo").innerHTML = Celular.toString();
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        Celular.pop();
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        Celular.push("cel6");
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        Celular.shift();
+
+        var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        Celular.unshift("cel6");
+
+         var Celular = ["cel1","cel2","cel3","cel4","cel5"];
+        delete Celular [2];
+
+
+
+    </script>
+
+</body>
+</html>
